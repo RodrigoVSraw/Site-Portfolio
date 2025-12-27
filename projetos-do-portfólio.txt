@@ -1,0 +1,11 @@
+Calculadora de IMC
+Aplicação totalmente front-end para o cálculo do Índice de Massa Corporal (IMC). Tecnologias usadas: HTML/JS/CSS.
+
+SisTask
+Full-stack para gerenciamento de tarefas. Tecnologias usadas: HTML/CSS/JS (front-end) + .NET Core C# (back-end).
+
+Estoque Total
+Full-stack voltado para o controle de estoque. Tecnologias usadas: HTML/JS + framework Tailwind CSS (front-end) + .NET Core C# (back-end).
+
+Caixa Eletrônico FS
+Full-stack com simulação de caixa eletrônico. Tecnologias usadas: HTML/CSS/JS (front-end) + Node.js + Express.js (back-end) + SQLite.

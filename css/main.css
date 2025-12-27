@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 125%;
+  line-height: 2rem;
+  background: radial-gradient(circle at top, #2e2e2e, #000000);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+
+/* Header Styles */
+header {
+  background-color: black;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid black;
+  color: white;
+  padding: 35px 5%;
+  box-shadow: 0 8px 32px 0 #0000004d;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+}
+
+.logo {
+  margin-right: auto;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+header a {
+  margin-left: 2rem;
+  border: none;
+}
+
+/* Main Content Styles */
+main h1 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+}
+
+
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  display: flexbox;
+  margin-bottom: auto;
+}
+
+footer section {
+  margin-right: 1rem;
+  font-weight: bold;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+
+}
+
+footer a {
+  margin-bottom: 2rem;
+  display: flex;
+  margin-left: 5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #ee6409;
+  transition: all 0.3s ease;
+}
+
+footer h3 {
+  margin-bottom: 1.5rem;
+  font-family: 'space Grotesk', sans-serif;
+}
+
+footer div {
+  margin-bottom: 1rem;  
+}
+
+footer p {
+  margin-left: 5rem;
+  display: flex;
+}
+
+footer img {
+  height: 2rem;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.linha-divisoria {
+  width: 90%;
+  margin: 2rem auto;
+  border: 0;
+  background-image: linear-gradient(to right, #ffffff00, #ffffff33);
+  height: 1px;
+  box-shadow: #e1c3c3 0px 0px 2px;
+}
+
+#gmail-img {
+  width: 28px;
+  height: auto;
+}
+
+#email-copy{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#button-copy{
+  cursor: pointer;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: white;
+  vertical-align: middle;
+  font-size: 90%;
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+#button-copy:hover {
+  color: #ee6409;
+  transition: all 0.3s ease;
+}
+
+#area-span {
+  background: radial-gradient(circle at top, #1919a9, #03033f);
+  padding: 1rem 2rem;
+  border-color: #2e2e2e;
+  border-radius: 8px;
+  box-shadow: #2e2e2e 2px 2px 8px;
+  align-items: center;
+  z-index: 9999;
+  bottom: 2rem;
+  right: 2rem;
+  position: fixed;
+  transition: all 1 ease-in-out;
+  display: flex;
+  gap: 10px;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translatex(100%);
+}
+
+#area-span.aparecer {
+  visibility: visible;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.copied{
+  font-size: 115%; 
+  animation: aparecer 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* Other Styles */
+h2,
+section p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+  color: #ee6409;
+  text-align: left;
+  font-family: 'space Grotesk', sans-serif;
+}
+
+a {
+  font-weight: bold;
+}
+
+/* Intro Style */
+#intro {
+  margin-left: 10rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+#intro h1 {
+  margin-bottom: 3rem;
+}
+
+#intro h2 {
+  margin-top: 20rem;
+  margin-bottom: 2rem;
+}
+
+#intro p {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+}
+
+/* About me Styles */
+.all-about-me {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  justify-content: center;
+  padding: 4rem;
+  font-size: 125%;
+
+}
+
+.all-about-me h2 {
+  margin-bottom: 2rem;
+  text-shadow: #574a4a 2px 2px 4px;
+}
+
+.all-about-me h3 {
+  font-family: 'space Grotesk', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.all-about-me a {
+  color: #ee6409;
+  text-decoration: none;
+}
+
+.all-about-me p {
+  margin-bottom: 1.5rem;
+}
+
+#courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+#courses h2 {
+  grid-column: 1 / -1;
+  margin-top: 4rem;
+
+}
+
+.item-course {
+  text-align: center;
+}
+
+#devsuperior img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.all-about-me ul {
+  list-style-type: square;
+  margin-left: 2rem;
+} 
+
+#technologies img {
+  max-width: 80%;
+  height: 80px;
+  width: auto;
+}
+
+main section img {
+  max-width: 300px;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  box-shadow: #000000 4px 4px 8px;
+}
+
+/* Projects Styles */
+#projetos {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+#projetos h1 {
+  grid-column: 1 / -1;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: #574a4a 2px 2px 4px;
+}
+
+#projetos h3 {
+  font-family: 'space Grotesk', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ee6409;
+}
+
+#projetos p {
+  font-size: 125%;
+}
+
+.item-projeto {
+  text-align: center;
+
+}
+
+.item-projeto img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Sobre (resumo) Styles */
+#sobre-mim,
+footer {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+}
+
+#area-about {
+  display: flex;
+  align-items: center;
+  padding: 14rem;
+  margin-top: 40rem;
+  justify-content: center;
+}
+
+#sobre-mim {
+  flex: 1;
+}
+
+#sobre-mim h3 {
+  font-family: 'space Grotesk', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#sobre-mim p {
+  font-size: 125%;
+}
+
+#sobre-mim section {
+  margin-bottom: 4rem;
+  justify-content: center;
+  text-align: justify;
+}
+
+#foto-sobre {
+  max-width: 22rem;
+  height: auto;
+  margin-left: 2rem;
+  box-shadow: #000000 4px 4px 8px;
+}
+
+/* Button Styles */
+.button-intro {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  margin-right: 1rem;
+  padding: 1.5rem 3rem;
+  border: white 2px solid;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: all 0.3s ease, border 0.3s ease;
+}
+
+.button-intro:hover {
+  box-shadow: white 0px 0px 12px;
+  transition: all 0.3s ease, border 0.3s ease ;
+  background-color: #ee6409;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ee6409;
+  transition: background-color 1s ease;
+}
+
+.button-up-down {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4rem 3rem;
+  font-size: 3rem;
+  border-radius: 60px;
+  background-color: transparent;
+  color: #ee6409;
+  border: #ee6409 2px solid;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+}
+
+.button-up-down:hover {
+  background-color: #ee6409;
+  color: white;
+  transition: all 0.8s ease;
+}
+
+.descend-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 18rem;
+}
+
+.ascend-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.ascend-indicator a {
+  margin-top: -5rem;
+  left: 50%;
+  /* Joga o começo do botão no meio da tela */
+  transform: translateX(-50%);
+}
+
+#button-about {
+  margin-top: 2rem;
+  display: flexbox;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.5rem 16rem;
+}
+
+#button-contact {
+  margin-top: 2rem;
+  display: flexbox;
+  justify-content: center;
+  background-color: #1818ab;
+  border: #2e2e2e 4px solid; 
+  box-shadow: #2e2e2e 0px 0px 12px;
+  transition: all 0.3s ease;
+  margin-left: 2rem;
+}
+
+#button-contact:hover {
+  background-color: #000080;
+  transition: all 0.3s ease;
+  border: aqua 4px solid;
+  box-shadow: aqua 0px 0px 12px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+
+  body {
+    font-size: 175%;
+  }
+
+  #projetos img {
+    display: none;
+  }
+
+  #projetos {
+    grid-template-columns: 1fr;
+
+  }
+
+  #area-about {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #foto-sobre {
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 80%;
+  }
+}
