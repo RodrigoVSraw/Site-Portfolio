@@ -17,7 +17,6 @@ body {
   color: white;
 }
 
-
 /* Header Styles */
 header {
   background-color: black;
@@ -472,9 +471,59 @@ footer {
 /* Media queries */
 
 @media screen and (max-width: 600px) {
+  /* Header */
+  header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header a.button {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Body */
 
   body {
-    font-size: 175%;
+    font-size: 100%;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  #intro {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  #intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  #intro h2 {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .button-intro {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    margin-right: 0;
   }
 
   #projetos img {
@@ -483,18 +532,76 @@ footer {
 
   #projetos {
     grid-template-columns: 1fr;
-
   }
 
   #area-about {
     flex-direction: column;
-    padding: 2rem;
-    text-align: center;
+    padding: 2rem 1rem;;
+    margin-top: 4rem;
   }
 
   #foto-sobre {
-    margin-left: 0;
-    margin-top: 2rem;
+    margin: 0 auto 2rem auto;
     max-width: 80%;
+    height: auto;
+  }
+
+  #sobre-mim h2 {
+    margin-top: 0;
+  }
+
+  #button-about {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  #sobre-mim section {
+    text-align: left;
+  }
+
+  #button-contact {
+    margin-left: 0;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ascend-indicator, .descend-indicator {
+    display: none; 
+  }
+
+  /* Footer */
+  footer section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  footer a,
+  #button-copy p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 1rem 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  #button-copy{
+    width: 100%;
+    margin: 0;
+  }
+
+  footer img,
+  #gmail-img {
+    height: 1.5rem;
+    width: auto;
+    margin: 0;
   }
 }

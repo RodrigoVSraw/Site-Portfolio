@@ -2,6 +2,10 @@
 let rolar = true
 
 window.addEventListener('wheel', function (evento) {
+  const isDesktop = window.innerWidth > 600;
+  if (!isDesktop){
+    return;
+  }
 
   const effectArea = window.scrollY < 10;
 
@@ -29,6 +33,11 @@ window.addEventListener('wheel', function (evento) {
 
 // **Faz com que scroll para cima simule o clique do botão de subida**
 window.addEventListener('wheel', function (evento) {
+  const isDesktop = window.innerWidth > 600;
+  if (!isDesktop){
+    return;
+  }
+
   const effectArea = window.scrollY > (document.getElementById('button-ascend').scrollHeight - window.innerHeight - 10);
 
   if (rolar && effectArea) {
