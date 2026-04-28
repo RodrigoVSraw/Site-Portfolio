@@ -473,6 +473,40 @@ footer {
     font-size: 100%;
   }
 
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  header a {
+    margin-left: 0;
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  #intro {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  #intro h1 {
+    font-size: 2.8rem;
+  }
+
+  #intro h2 {
+    font-size: 1.2rem;
+  }
+
+  #aintro-buttons {
+    justify-content: center;
+  }
+
   #projetos {
     grid-template-columns: 1fr;
 
@@ -480,7 +514,7 @@ footer {
 
   #area-about {
     flex-direction: column;
-    padding: 6rem 2rem; 
+    padding: 4rem 1.5rem; 
     text-align: center;
     max-width: 100%;
   }
@@ -491,10 +525,20 @@ footer {
     max-width: 80%;
   }
 
+  #sobre-mim section {
+    text-align: left;
+  } 
+
+  #buttons-about {
+    justify-content: center;
+  }
+
   #button-about, #button-contact, .button-intro {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1rem;
     display: block;
     box-sizing: border-box;
   }
