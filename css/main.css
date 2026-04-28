@@ -497,19 +497,61 @@ footer {
 
   #intro h1 {
     font-size: 2.8rem;
+    text-align: center;
   }
 
   #intro h2 {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   #aintro-buttons {
     justify-content: center;
   }
 
+  #courses {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .item-course p {
+    text-align: justify;
+  }
+
+  .all-about-me {
+    padding: 2rem 1rem;
+    text-align: left;
+  }
+
+  #devsuperior img, #technologies img {
+    max-width: 95%;
+    margin-top: 1rem;
+  }
+
+  .item-course {
+    text-align: center;
+  }
+
   #projetos {
     grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
 
+  #projetos h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  #projetos p {
+    font-size: 110%;
+    text-align: justify;
+  }
+
+  #projetos img {
+    max-width: 100%;
+    margin-top: 1rem;
   }
 
   #area-about {
