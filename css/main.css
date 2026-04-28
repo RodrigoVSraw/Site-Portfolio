@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -17,9 +18,10 @@ body {
   color: white;
 }
 
+
 /* Header Styles */
 header {
-  background-color: black;
+  background-color: #000000cc;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid black;
@@ -30,9 +32,12 @@ header {
   top: 0;
   z-index: 999;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
 }
 
-.logo {
+.logo { 
   margin-right: auto;
   text-decoration: none;
   margin-top: 0.5rem;
@@ -55,23 +60,26 @@ main h1 {
 /* Footer Styles */
 footer {
   text-align: center;
-  display: flexbox;
+  padding: 2rem 1rem;
   margin-bottom: auto;
+  margin-top: 4rem;
 }
 
 footer section {
-  margin-right: 1rem;
   font-weight: bold;
-  display: flexbox;
+  display: flex;
   align-items: center;
   justify-content: center;
-
+  gap: 1.5rem;
+  flex-direction: column;
 }
 
 footer a {
-  margin-bottom: 2rem;
   display: flex;
-  margin-left: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  gap: 0.5rem;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -92,8 +100,7 @@ footer div {
 }
 
 footer p {
-  margin-left: 5rem;
-  display: flex;
+  margin-left: 1rem;
 }
 
 footer img {
@@ -192,24 +199,36 @@ a {
 
 /* Intro Style */
 #intro {
-  margin-left: 10rem;
-  margin-bottom: 1.5rem;
+  max-width: 90%;
+  margin: 0 auto;
   font-weight: 700;
   font-family: 'Space Grotesk', sans-serif;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
 }
 
 #intro h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  font-size: 4rem;
 }
 
 #intro h2 {
-  margin-top: 20rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 #intro p {
-  margin-bottom: 4rem;
-  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+#aintro-buttons {
+  display: flex;
+  gap: 1;
+  flex-wrap: wrap;
 }
 
 /* About me Styles */
@@ -331,9 +350,13 @@ footer {
 #area-about {
   display: flex;
   align-items: center;
-  padding: 14rem;
-  margin-top: 40rem;
+  padding: 4rem 2rem;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 80vh;
 }
 
 #sobre-mim {
@@ -357,13 +380,19 @@ footer {
 }
 
 #foto-sobre {
-  max-width: 22rem;
+  max-width: 350px;
   height: auto;
-  margin-left: 2rem;
+  margin-left: 0;
   box-shadow: #000000 4px 4px 8px;
 }
 
 /* Button Styles */
+#aintro-buttons{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .button-intro {
   text-decoration: none;
   font-weight: 600;
@@ -377,6 +406,7 @@ footer {
   cursor: pointer;
   font-family: sans-serif;
   transition: all 0.3s ease, border 0.3s ease;
+  justify-content: center;
 }
 
 .button-intro:hover {
@@ -403,62 +433,30 @@ footer {
   transition: background-color 1s ease;
 }
 
-.button-up-down {
-  text-decoration: none;
-  font-weight: 600;
-  padding: 4rem 3rem;
-  font-size: 3rem;
-  border-radius: 60px;
-  background-color: transparent;
-  color: #ee6409;
-  border: #ee6409 2px solid;
-  cursor: pointer;
-  font-family: sans-serif;
-  transition: all 0.3s ease;
-}
-
-.button-up-down:hover {
-  background-color: #ee6409;
-  color: white;
-  transition: all 0.8s ease;
-}
-
-.descend-indicator {
-  display: flex;
-  justify-content: center;
-  margin-top: 18rem;
-}
-
-.ascend-indicator {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.ascend-indicator a {
-  margin-top: -5rem;
-  left: 50%;
-  /* Joga o começo do botão no meio da tela */
-  transform: translateX(-50%);
-}
-
 #button-about {
-  margin-top: 2rem;
-  display: flexbox;
   justify-content: center;
-  margin: 0 auto;
-  padding: 1.5rem 16rem;
+  display: inline-block;
 }
 
 #button-contact {
-  margin-top: 2rem;
-  display: flexbox;
   justify-content: center;
   background-color: #1818ab;
   border: #2e2e2e 4px solid; 
   box-shadow: #2e2e2e 0px 0px 12px;
   transition: all 0.3s ease;
-  margin-left: 2rem;
+}
+
+#button-about, #button-contact {
+  margin: 0;
+  padding: 1.5rem 4rem;
+}
+
+#buttons-about {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 #button-contact:hover {
@@ -469,139 +467,35 @@ footer {
 }
 
 /* Media queries */
-
-@media screen and (max-width: 600px) {
-  /* Header */
-  header {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  header a.button {
-    margin-left: 0.5rem;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.8rem;
-  }
-
-  /* Body */
+@media screen and (max-width: 1024px) {
 
   body {
     font-size: 100%;
-    text-align: center;
-    overflow-x: hidden;
-  }
-
-  #intro {
-    margin: 0;
-    margin-top: 2rem;
-    padding: 0 1rem;
-  }
-
-  #intro h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-    text-align: center;
-  }
-
-  #intro h2 {
-    margin-top: 4rem;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    text-align: center;
-  }
-
-  .button-intro {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 1rem 0;
-    margin-right: 0;
-  }
-
-  #projetos img {
-    display: none;
   }
 
   #projetos {
     grid-template-columns: 1fr;
+
   }
 
   #area-about {
     flex-direction: column;
-    padding: 2rem 1rem;;
-    margin-top: 4rem;
+    padding: 6rem 2rem; 
+    text-align: center;
+    max-width: 100%;
   }
 
   #foto-sobre {
-    margin: 0 auto 2rem auto;
-    max-width: 80%;
-    height: auto;
-  }
-
-  #sobre-mim h2 {
-    margin-top: 0;
-  }
-
-  #button-about {
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-  }
-
-  #sobre-mim section {
-    text-align: left;
-  }
-
-  #button-contact {
     margin-left: 0;
-    padding: 1rem;
+    margin-top: 2rem;
+    max-width: 80%;
+  }
+
+  #button-about, #button-contact, .button-intro {
     width: 100%;
-    box-sizing: border-box;
-  }
-
-  .ascend-indicator, .descend-indicator {
-    display: none; 
-  }
-
-  /* Footer */
-  footer section{
-    display: flex;
-    flex-direction: column;
+    margin-left: 0;
     margin-right: 0;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-
-  footer a,
-  #button-copy p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 0 0 1rem 0;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-
-  #button-copy{
-    width: 100%;
-    margin: 0;
-  }
-
-  footer img,
-  #gmail-img {
-    height: 1.5rem;
-    width: auto;
-    margin: 0;
+    display: block;
+    box-sizing: border-box;
   }
 }
