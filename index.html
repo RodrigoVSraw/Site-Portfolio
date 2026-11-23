@@ -12,112 +12,54 @@
 </head>
 
 <body>
-  <header>
-    <a href="index.html" class="logo">
-      <h1>FullStack DEV</h1>
-    </a>
+  <div id="header"></div>
 
-    <a href="https://github.com/RodrigoVSraw" target="_blank" rel="noopener noreferrer" class="button">Github</a>
-
-    <a href="https://www.linkedin.com/in/rodrigovsraw/" target="_blank" rel="noopener noreferrer"
-      class="button">LinkedIn</a>
-
-  </header>
   <main>
     <section id="intro">
-      <h2>
-        <"Olá Mundo", eu sou>
-      </h2>
+      <h2 data-i18n="intro-ola">&lt;"Olá Mundo", eu sou&gt;</h2>
       <h1>Rodrigo Raw</h1>
 
-      <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+      <p data-i18n="intro-subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+
       <div id="aintro-buttons">
-        <a href="Assets/CURRÍCULO - RODRIGO RAW.pdf" download="cv-rodrigo-raw.pdf" class="button-intro">Dowload do meu
-        CV</a>
-
-      <a href="projects.html" class="button-intro">Meus Projetos</a>
+        <a href="Assets/rodrigo-raw-curriculo.pdf" download="cv-rodrigo-raw.pdf" class="button-intro" data-i18n="btn-cv">
+          Download do meu CV
+        </a>
+        <a href="projects.html" class="button-intro" data-i18n="btn-projetos">
+          Meus Projetos
+        </a>
       </div>
-      
-
     </section>
 
     <section id="area-about">
-      
-      <img src="imgs/FotoFundo.jpeg" alt="Foto de Rodrigo Raw" id="foto-sobre">
+      <img src="Assets/imgs/foto-fundo.jpeg" alt="Foto de Rodrigo Raw" id="foto-sobre">
 
       <section id="sobre-mim">
+        <h2 data-i18n="sobre-titulo">Sobre mim</h2>
 
-        <h2>About me (Sobre mim)</h2>
+        <p data-i18n="sobre-p1">
+          Olá, meu nome é Rodrigo Vieira Santos Raw. Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) na Universidade Santa Cecília e gosto muito de construir aplicações web, trabalhar com Inteligência Artificial e criar jogos.
+        </p>
 
-        <section>
-          <h3>ENGLISH</h3>
+        <p data-i18n="sobre-p2">
+          Tenho facilidade para aprender tecnologias novas e me adaptar a desafios diferentes. Meus projetos acadêmicos e pessoais envolvem desenvolvimento Full Stack, integração de IA na prática e criação de jogos.
+        </p>
 
-          <p>Hello, my name is Rodrigo Raw. I am a Software Development student from Brazil, currently studying at
-            Universidade Santa Cecília. I have a passion for building web applications and developing games.</p>
+        <p data-i18n="sobre-p3">
+          Atualmente, busco oportunidades para ganhar experiência no mercado, colocar em prática o que venho estudando e contribuir em projetos desafiadores.
+        </p>
 
-          <p>I have an easy time learning new technologies and adapting to new diverse challenges. My academic
-            experience
-            and personal projects consist in game creation, web development, and applying artificial intelligence on
-            programs.</p>
-
-          <p>I am currently seeking opportunites to acquire experience as a developer, applying my knowledge to work in
-            challenging projects.</p>
-        </section>
-
-        <section>
-          <h3>PORTUGUÊS</h3>
-
-          <p>Olá, meu nome é Rodrigo Vieira Santos Raw, sou um estudante de Análise e Desenvolvimento de Sistemas (ADS)
-            na
-            Universidade Santa Cecília, apaixonado por construir aplicações web e jogos.</p>
-
-          <p>Tenho facilidade em aprender novas tecnologias e me adaptar a diferentes desafios. Minha experiência
-            acadêmica
-            e projetos pessoais envolvem a criação de jogos, o desenvolvimento de páginas web e a implementação de
-            inteligência artificial em programas.</p>
-
-          <p>Atualmente, busco oportunidades para ganhar experiência no mercado, aplicar meus conhecimentos e contribuir
-            em
-            projetos desafiadores.</p>
-        </section>
         <div id="buttons-about">
-          <a href="about.html" id="button-about" class="button-intro">Mais sobre mim</a>
-          <a href="https://wa.me/5511991301856" target="_blank" id="button-contact" class="button-intro">Entre em
-            Contato</a>
+          <a href="about.html" id="button-about" class="button-intro" data-i18n="btn-mais-sobre">Mais sobre mim</a>
+          <a href="https://wa.me/5511991301856" target="_blank" id="button-contact" class="button-intro" data-i18n="btn-contato">Entre em Contato</a>
         </div>
-
       </section>
-
     </section>
   </main>
 
-  <footer>
-    <div>
-      &copy; 2025 Rodrigo Raw. Todos os direitos reservados. Para saber mais, entre em Contato.
-    </div>
-    <hr class="linha-divisoria">
-    <section>
-      <h3>Contatos:</h3>
-      <a href="https://wa.me/5511991301856" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
-        +55 (11)99130-1856</a>
-      <div class="email-copy">
-        <button id="button-copy" title="Copy to clipboard">
-          <p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_(2020).svg" alt="Gmail"
-            id="gmail-img" />
-          rodrigo.rraw@gmail.com</p>
-        </button>
-      </div>
-    </section>
-  </footer>
-  <div id="area-span">
-    <span id="email-span" class="copied">E-mail copied to clipboard!</span>
-  </div>
-  
+  <div id="footer"></div>
 
   <script src="javascript/script.js"></script>
-
 </body>
-
 
 </html>
