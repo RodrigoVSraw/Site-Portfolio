@@ -1,6 +1,8 @@
 const traducoes = {
   pt: {},
   en: {
+    "page-title": "Rodrigo Raw | Portfolio",
+    "btn-contatos": "Contacts",
     // index.html inglês
     "intro-ola": '<"Hello World", I am>',
     "intro-subtitulo": "Systems Analysis and Development Student",
@@ -28,7 +30,9 @@ const traducoes = {
     
 
     // projects.html inglês
-    "projects": "PROJECTS",
+    "projects-badge": "Portfolio",
+    "projects": "My Projects",
+    "projects-subtitle": "Solutions developed during my academic and personal projects, as well as in hackathons.",
     "project1-name": "Hackathon - Project \"POSEIDON - Sync\"",
     "project1-description": "Project developed during Porto Hack 2025, aiming to create an innovative solution for the maritime logistics and transportation sector using artificial intelligence.",
     "project1-technologies": "Technologies used: HTML/CSS/JS (front-end) + n8n (back-end).",
