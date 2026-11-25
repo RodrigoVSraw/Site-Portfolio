@@ -11,50 +11,106 @@
 </head>
 
 <body>
+  <div id="header"></div>
 
-    <div id="header"></div> 
-    
   <main>
     <section id="projetos">
-      <h1 data-i18n="projects">PROJETOS</h1>
-      <section class="item-projeto">
-        <h3 data-i18n="project1-name">Hackathon - Projeto "POSEIDON - Sync"</h3>
-        <img src="Assets/imgs/poseidon-logo.jpeg" alt="Tela do Projeto">
-        <p data-i18n="project1-description">Projeto desenvolvido durante o Porto Hack 2025, com o objetivo de criar uma solução inovadora para o setor de
-          logística e transporte marítimo utilizando inteligência artificial. </p>
-        <p data-i18n="project1-technologies">Tecnologias usadas: HTML/CSS/JS (front-end) + n8n (back-end).</p>
-        <p><a href="https://github.com/RodrigoVSraw/Porto-Hack-2025-Final?tab=readme-ov-file">Link do Projeto</a></p>
-      </section>
+      <div class="projetos-header">
+        <span class="section-badge" data-i18n="projects-badge">Portfólio</span>
+        <h1 data-i18n="projects">Meus Projetos</h1>
+        <p class="projetos-subtitulo" data-i18n="projects-subtitle">
+          Soluções desenvolvidas em hackathons, estudos e projetos pessoais.
+        </p>
+      </div>
 
-      <section class="item-projeto">
-        <h3 data-i18n="project2-name">Project - NexusIA</h3>
-        <img src="Assets/imgs/nexus-page.png" alt="Tela do Projeto" style="width: 250px; height: auto;">
-        <p data-i18n="project2-description">Projeto com foco em inteligência artificial e construção de personalidades de chatbots.</p>
-        <p data-i18n="project2-technologies">Tecnologias usadas: HTML/CSS/JS (front-end) + Node.js + Express.js
-          (back-end).</p>
-        <p><a href="https://github.com/RodrigoVSraw/Project-NexusIA">Link do Projeto</a></p>
-      </section>
+      <article class="item-projeto">
+        <div class="projeto-img-box">
+          <img src="Assets/imgs/poseidon-logo.jpeg" alt="Tela do Projeto POSEIDON Sync">
+        </div>
+        <div class="projeto-conteudo">
+          <h3 data-i18n="project1-name">Hackathon - Projeto "POSEIDON - Sync"</h3>
+          <p data-i18n="project1-description">
+            Projeto desenvolvido durante o Porto Hack 2025, com o objetivo de criar uma solução inovadora para o setor de logística e transporte marítimo utilizando inteligência artificial.
+          </p>
+          <p class="projeto-tech" data-i18n="project1-technologies">
+            Tecnologias usadas: HTML/CSS/JS (front-end) + n8n (back-end).
+          </p>
+          <a href="https://github.com/RodrigoVSraw/Porto-Hack-2025-Final?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="btn-projeto">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span data-i18n="project1-link">Ver no GitHub</span>
+          </a>
+        </div>
+      </article>
 
-      <section class="item-projeto">
-        <h3 data-i18n="project3-name">Project - Loja RPG</h3>
-        <img src="Assets/imgs/loja-rpg.jpeg" alt="Tela do Projeto" style="width: 180px; height: auto; ">
-        <p data-i18n="project3-description">Projeto desenvolvido com o objetivo de por meus conhecimentos de Orientação a Objetos C# em prática.</p>
-        <p data-i18n="project3-technologies">Tecnologias usadas: Console Application em C#.</p>
-        <p><a href="https://github.com/RodrigoVSraw/Project-Loja-RPG">Link do Projeto</a></p>
-      </section>
+      <article class="item-projeto">
+        <div class="projeto-img-box">
+          <img src="Assets/imgs/nexus-page.png" alt="Tela do Projeto NexusIA">
+        </div>
+        <div class="projeto-conteudo">
+          <h3 data-i18n="project2-name">Project - NexusIA</h3>
+          <p data-i18n="project2-description">
+            Projeto com foco em inteligência artificial e construção de personalidades de chatbots.
+          </p>
+          <p class="projeto-tech" data-i18n="project2-technologies">
+            Tecnologias usadas: HTML/CSS/JS (front-end) + Node.js + Express.js (back-end).
+          </p>
+          <a href="https://github.com/RodrigoVSraw/Project-NexusIA" target="_blank" rel="noopener noreferrer" class="btn-projeto">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span data-i18n="project2-link">Ver no GitHub</span>
+          </a>
+        </div>
+      </article>
 
-      <section class="item-projeto">
-        <h3 data-i18n="project4-name">Rodrigo Raw | Portfólio</h3>
-        <img src="Assets/imgs/portifolio-page.jpeg" alt="Tela do Projeto" style="width: 250px; height: auto; ">
-        <p data-i18n="project4-description">Este é meu portfólio pessoal, onde apresento meus projetos e habilidades como desenvolvedor. Deixo o código disponível para consulta.</p>
-        <p data-i18n="project4-technologies">Tecnologias usadas: HTML/CSS/JS (front-end).</p>
-        <p><a href="https://github.com/RodrigoVSraw/Site-Portfolio">Link do Projeto</a></p>
-      </section>
+      <article class="item-projeto">
+        <div class="projeto-img-box">
+          <img src="Assets/imgs/loja-rpg.jpeg" alt="Tela do Projeto Loja RPG">
+        </div>
+        <div class="projeto-conteudo">
+          <h3 data-i18n="project3-name">Project - Loja RPG</h3>
+          <p data-i18n="project3-description">
+            Projeto desenvolvido com o objetivo de pôr meus conhecimentos de Orientação a Objetos C# em prática.
+          </p>
+          <p class="projeto-tech" data-i18n="project3-technologies">
+            Tecnologias usadas: Console Application em C#.
+          </p>
+          <a href="https://github.com/RodrigoVSraw/Project-Loja-RPG" target="_blank" rel="noopener noreferrer" class="btn-projeto">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span data-i18n="project3-link">Ver no GitHub</span>
+          </a>
+        </div>
+      </article>
 
+      <article class="item-projeto">
+        <div class="projeto-img-box">
+          <img src="Assets/imgs/portifolio-page.jpeg" alt="Tela do Projeto Portfólio">
+        </div>
+        <div class="projeto-conteudo">
+          <h3 data-i18n="project4-name">Rodrigo Raw | Portfólio</h3>
+          <p data-i18n="project4-description">
+            Este é meu portfólio pessoal, onde apresento meus projetos e habilidades como desenvolvedor. Deixo o código disponível para consulta.
+          </p>
+          <p class="projeto-tech" data-i18n="project4-technologies">
+            Tecnologias usadas: HTML/CSS/JS (front-end).
+          </p>
+          <a href="https://github.com/RodrigoVSraw/Site-Portfolio" target="_blank" rel="noopener noreferrer" class="btn-projeto">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span data-i18n="project4-link">Ver no GitHub</span>
+          </a>
+        </div>
+      </article>
     </section>
   </main>
 
   <div id="footer"></div>
+  <div id="top-button"></div>
 
   <script src="javascript/script.js"></script>
 </body>

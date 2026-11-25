@@ -17,60 +17,82 @@
     <section id="skills" class="all-about-me">
       <h2 data-i18n="skills-title">Habilidades</h2>
       <p data-i18n="skills-description">As minhas habilidades são:</p>
-      <ul>
-        <li data-i18n="skill-1">Desenvolvimento Full-Stack</li>
-        <li data-i18n="skill-2">Banco de Dados</li>
-        <li data-i18n="skill-3">Desenvolvimento de Jogos</li>
-        <li data-i18n="skill-4">Inteligência Artificial</li>
-        <li data-i18n="skill-5">Resolução de Problemas</li>
-        <li data-i18n="skill-6">Trabalho em Equipe</li>
-        <li data-i18n="skill-7">Proatividade</li>
-        <li data-i18n="skill-8">Comunicação</li>
-        <li data-i18n="skill-9">Facilidade de Aprendizado</li>
-      </ul>
+
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3 data-i18n="hard-skills-title">Hard Skills</h3>
+          <ul>
+            <li data-i18n="skill-1">Desenvolvimento Full-Stack</li>
+            <li data-i18n="skill-2">Banco de Dados</li>
+            <li data-i18n="skill-3">Desenvolvimento de Jogos</li>
+            <li data-i18n="skill-4">Inteligência Artificial</li>
+            <li data-i18n="skill-10">Versionamento de Código (Git)</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 data-i18n="soft-skills-title">Soft Skills</h3>
+          <ul>
+            <li data-i18n="skill-5">Resolução de Problemas</li>
+            <li data-i18n="skill-6">Trabalho em Equipe</li>
+            <li data-i18n="skill-7">Proatividade</li>
+            <li data-i18n="skill-8">Comunicação</li>
+            <li data-i18n="skill-9">Facilidade de Aprendizado</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="technologies" class="all-about-me">
       <h2 data-i18n="technologies-title">Linguagens e Tecnologias</h2>
       <p data-i18n="technologies-description">Linguagens e tecnologias que possuo conhecimento:</p>
-      <img src="https://skillicons.dev/icons?i=html,css,javascript,react,cs,java,spring,postgresql,python" />
+      <img src="https://skillicons.dev/icons?i=html,css,javascript,react,cs,java,spring,postgresql,python" alt="Ícones de tecnologias" />
     </section>
 
     <section id="courses" class="all-about-me">
       <h2 data-i18n="courses-title">CURSOS</h2>
 
-      <section class="item-course">
-        <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer"><img
-            src="https://github.com/user-attachments/assets/6a9ab4d9-e813-4d9c-9a95-ab3d112607de"
-            alt="logo freecodecamp">
-          <h3 data-i18n="course-1-name">freeCodeCamp - CSS e HTML</h3>
+      <article class="item-course">
+        <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer" class="course-img-box">
+          <img src="https://github.com/user-attachments/assets/6a9ab4d9-e813-4d9c-9a95-ab3d112607de" alt="logo freecodecamp">
         </a>
+        <div class="course-conteudo">
+          <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+            <h3 data-i18n="course-1-name">freeCodeCamp - CSS e HTML</h3>
+          </a>
+          <p data-i18n="course-1-description">
+            Neste curso foram passados conceitos de programação web com HTML e CSS, e responsividade, dando uma base sólida para desenvolvimento front-end.
+          </p>
+        </div>
+      </article>
 
-        <p data-i18n="course-1-description">Neste curso foram passados conceitos de programação web com HTML e CSS, e responsividade, dando uma base
-          sólida para desenvolvimento front-end.</p>
-      </section>
-
-      <section id="devsuperior" class="item-course">
-        <a href="https://devsuperior.com.br" target="_blank" rel="noopener noreferrer"><img
-            src="Assets/imgs/devsuperior-cover.jpg" alt="logo devsuperior">
-          <h3 data-i18n="course-2-name">Intensivão JavaSpring</h3>
+      <article id="devsuperior" class="item-course">
+        <a href="https://devsuperior.com.br" target="_blank" rel="noopener noreferrer" class="course-img-box">
+          <img src="Assets/imgs/devsuperior-cover.jpg" alt="logo devsuperior">
         </a>
+        <div class="course-conteudo">
+          <a href="https://devsuperior.com.br" target="_blank" rel="noopener noreferrer">
+            <h3 data-i18n="course-2-name">Intensivão JavaSpring</h3>
+          </a>
+          <p data-i18n="course-2-description">
+            Este curso foi uma imersão intensiva em Java e Spring, abordando conceitos avançados de desenvolvimento backend.
+          </p>
+        </div>
+      </article>
 
-        <p data-i18n="course-2-description">Este curso foi uma imersão intensiva em Java e Spring, abordando conceitos avançados de desenvolvimento
-          backend.</p>
-      </section>
-
-      <section class="item-course">
-        <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank"
-          rel="noopener noreferrer"><img
-            src="https://github.com/user-attachments/assets/3acd7551-89e9-414c-9021-41d402fed041"
-            alt="CS50 Harvard logo">
-          <h3 data-i18n="course-3-name">CS50 - Harvard</h3>
+      <article class="item-course">
+        <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank" rel="noopener noreferrer" class="course-img-box">
+          <img src="https://github.com/user-attachments/assets/3acd7551-89e9-414c-9021-41d402fed041" alt="CS50 Harvard logo">
         </a>
-
-        <p data-i18n="course-3-description">Este curso abordou fundamentos da ciência da computação, incluindo algoritmos, estruturas de dados e
-          programação em C</p>
-      </section>
+        <div class="course-conteudo">
+          <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" target="_blank" rel="noopener noreferrer">
+            <h3 data-i18n="course-3-name">CS50 - Harvard</h3>
+          </a>
+          <p data-i18n="course-3-description">
+            Este curso abordou fundamentos da ciência da computação, incluindo algoritmos, estruturas de dados e programação em C.
+          </p>
+        </div>
+      </article>
     </section>
 
     <section id="about" class="all-about-me">
@@ -82,18 +104,16 @@
         <li data-i18n="interest-3">Esportes</li>
         <li data-i18n="interest-4">Leitura</li>
         <li data-i18n="interest-5">Viagens</li>
-        <li data-i18n="interest-6">Acadêmia/Saúde</li>
+        <li data-i18n="interest-6">Academia/Saúde</li>
         <li data-i18n="interest-7">Montagem e configuração de computadores</li>
       </ul>
     </section>
-
   </main>
 
   <div id="footer"></div>
+  <div id="top-button"></div>
 
   <script src="javascript/script.js"></script>
-
 </body>
-
 
 </html>

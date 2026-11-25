@@ -16,25 +16,37 @@
 
   <main>
     <section id="intro">
-      <h2 data-i18n="intro-ola">&lt;"Olá Mundo", eu sou&gt;</h2>
-      <h1>Rodrigo Raw</h1>
+      
 
-      <p data-i18n="intro-subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+      <div id="intro-texto">
+        <h2 data-i18n="intro-ola">&lt;"Olá Mundo", eu sou&gt;</h2>
+        <h1>Rodrigo Raw</h1>
 
-      <div id="aintro-buttons">
-        <a href="Assets/rodrigo-raw-curriculo.pdf" download="cv-rodrigo-raw.pdf" class="button-intro" data-i18n="btn-cv">
-          Download do meu CV
-        </a>
-        <a href="projects.html" class="button-intro" data-i18n="btn-projetos">
-          Meus Projetos
-        </a>
+        <p data-i18n="intro-subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+
+        <div id="aintro-buttons">
+          <a href="Assets/rodrigo-raw-curriculo.pdf" download="cv-rodrigo-raw.pdf" class="button-intro" data-i18n="btn-cv">
+            Download do meu CV
+          </a>
+          <a href="projects.html" class="button-intro" data-i18n="btn-projetos">
+            Meus Projetos
+          </a>
+        </div>
       </div>
+
+      
+        <img src="Assets/imgs/foto-fundo.jpeg" alt="Foto de Rodrigo Raw" id="foto-sobre">
+     
+        <a href="#area-about" class="scroll-down" aria-label="Rolar para Sobre mim">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </a>
     </section>
 
     <section id="area-about">
-      <img src="Assets/imgs/foto-fundo.jpeg" alt="Foto de Rodrigo Raw" id="foto-sobre">
-
-      <section id="sobre-mim">
+      
+      <div id="sobre-mim">
         <h2 data-i18n="sobre-titulo">Sobre mim</h2>
 
         <p data-i18n="sobre-p1">
@@ -49,15 +61,95 @@
           Atualmente, busco oportunidades para ganhar experiência no mercado, colocar em prática o que venho estudando e contribuir em projetos desafiadores.
         </p>
 
+        
+        <div class="info-cards">
+          <div class="info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ee6409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <strong data-i18n="info-disp-label">Disponibilidade:</strong>
+            <span data-i18n="info-disp-valor">Santos, SP — Presencial, Híbrido ou Remoto</span>
+          </div>
+
+          <div class="info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ee6409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <strong data-i18n="info-idiomas-label">Idiomas:</strong>
+            <span data-i18n="info-idiomas-valor">Português (Nativo), Inglês (Avançado)</span>
+          </div>
+        </div>
+
         <div id="buttons-about">
           <a href="about.html" id="button-about" class="button-intro" data-i18n="btn-mais-sobre">Mais sobre mim</a>
           <a href="https://wa.me/5511991301856" target="_blank" id="button-contact" class="button-intro" data-i18n="btn-contato">Entre em Contato</a>
         </div>
-      </section>
+      </div>
+
+      
+      <div class="highlights-col">
+        <div class="highlight-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ee6409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3 data-i18n="card1-titulo">Desenvolvimento Full Stack</h3>
+          </div>
+          <p data-i18n="card1-desc">
+            Construção de aplicações web completas unindo Front-end responsivo com Back-end estruturado em Java, C#, Python e bancos de dados SQL.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ee6409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/>
+                <line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/>
+                <line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/>
+                <line x1="20" y1="14" x2="23" y2="14"/>
+                <line x1="1" y1="9" x2="4" y2="9"/>
+                <line x1="1" y1="14" x2="4" y2="14"/>
+              </svg>
+            </div>
+            <h3 data-i18n="card2-titulo">IA Aplicada & Automação</h3>
+          </div>
+          <p data-i18n="card2-desc">
+            Integração prática de modelos de linguagem (Gemini e OpenAI), chatbots contextuais e fluxos automatizados com n8n em projetos reais.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ee6409" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 data-i18n="card3-titulo">Finalista Porto Hack 2025</h3>
+          </div>
+          <p data-i18n="card3-desc">
+            Liderança de equipe e desenvolvimento Full Stack no POSEIDON SYNC, solução com IA criada para sincronizar operações do Porto de Santos.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
+  
+
   <div id="footer"></div>
+  <div id="top-button"></div>
 
   <script src="javascript/script.js"></script>
 </body>

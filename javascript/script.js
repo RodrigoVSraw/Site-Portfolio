@@ -15,21 +15,36 @@ const traducoes = {
     "footer-direitos": "Rodrigo Raw. All rights reserved. To learn more, get in touch.",
     "footer-contatos": "Contact:",
     "email-copiado": "E-mail copied to clipboard!",
+    "info-disp-label": "Availability:",
+    "info-disp-valor": "Santos, SP — On-site, Hybrid, or Remote",
+    "info-idiomas-label": "Languages:",
+    "info-idiomas-valor": "Portuguese (Native), English (Advanced)",
+    "card1-titulo": "Full Stack Development",
+    "card1-desc": "Building complete web applications combining responsive Front-end with structured Back-end using Java, C#, Python, and SQL databases.",
+    "card2-titulo": "Applied AI & Automation",
+    "card2-desc": "Hands-on integration of language models (Gemini and OpenAI), contextual chatbots, and automated n8n workflows in real projects.",
+    "card3-titulo": "Porto Hack 2025 Finalist",
+    "card3-desc": "Team leadership and Full Stack development on POSEIDON SYNC, an AI-powered solution built to synchronize Port of Santos operations.",
+    
 
     // projects.html inglês
     "projects": "PROJECTS",
     "project1-name": "Hackathon - Project \"POSEIDON - Sync\"",
     "project1-description": "Project developed during Porto Hack 2025, aiming to create an innovative solution for the maritime logistics and transportation sector using artificial intelligence.",
     "project1-technologies": "Technologies used: HTML/CSS/JS (front-end) + n8n (back-end).",
+    "project1-link": "Project Link",
     "project2-name": "Project - NexusIA",
     "project2-description": "Project with a focus on artificial intelligence and the creation of chatbot personalities.",
     "project2-technologies": "Technologies used: HTML/CSS/JS (front-end) + Node.js + Express.js (back-end).",
+    "project2-link": "Project Link",
     "project3-name": "Project - Loja RPG",
     "project3-description": "Project developed with the goal of applying my knowledge of Object-Oriented Programming in C#.",
     "project3-technologies": "Technologies used: Console Application in C#.",
+    "project3-link": "Project Link",
     "project4-name": "Rodrigo Raw | Portfolio",
     "project4-description": "This is my personal portfolio, where I present my projects and skills as a developer. I leave the code available for review.",
     "project4-technologies": "Technologies used: HTML/CSS/JS (front-end).",
+    "project4-link": "Project Link",
 
     // about.html inglês
     "skills-title": "SKILLS",
@@ -68,10 +83,15 @@ const traducoes = {
 
 async function carregarComponente(id, arquivo) {
   try {
+    const elemento = document.getElementById(id);
+    if (!elemento) return;
+
     const resposta = await fetch(arquivo);
     if (!resposta.ok) throw new Error(`Erro ao carregar ${arquivo}`);
+
     const html = await resposta.text();
-    document.getElementById(id).innerHTML = html;
+    const htmlLimpo = html.replace(/<!-- Code injected by live-server -->[\s\S]*?<\/script>/gi, "");
+    elemento.innerHTML = htmlLimpo;
   } catch (erro) {
     console.error(erro);
   }
@@ -139,12 +159,35 @@ function configurarCopiaEmail() {
   }
 }
 
+function configurarBotaoTopo() {
+  const btnTop = document.getElementById("btn-top");
+  if (!btnTop) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btnTop.classList.add("visivel");
+    } else {
+      btnTop.classList.remove("visivel");
+    }
+  });
+
+  // Sobe suavemente ao clicar
+  btnTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
 async function iniciarPagina() {
   await carregarComponente("header", "layout/header.html");
   await carregarComponente("footer", "layout/footer.html");
+  await carregarComponente("top-button", "layout/top-button.html");
   dataFooter();
   configurarIdioma();
   configurarCopiaEmail();
+  configurarBotaoTopo();
 }
 
 iniciarPagina();
